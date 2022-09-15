@@ -31,9 +31,11 @@ namespace beginning
             Console.WriteLine("------------------------------------------");
 
             int[] intArray = new []{ 1,2,3};
+
             foreach (var k in intArray)
             {
-                Console.WriteLine(k);
+                var foo = k * 2;
+                Console.WriteLine(foo);
             }
 
             Console.WriteLine("------------------------------------------");
