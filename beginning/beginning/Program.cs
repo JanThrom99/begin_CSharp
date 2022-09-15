@@ -14,10 +14,10 @@ namespace beginning
             Console.WriteLine("Gib mit ein Wort/satz");
             string entry = Console.ReadLine();
 
-            string trimmed_entry = entry.Trim('a',' ');
+            string subEntry = entry.Substring(3,1);
 
             Console.WriteLine("old: " + entry + ":");
-            Console.WriteLine("new: " + trimmed_entry + ":");
+            Console.WriteLine("new: " + subEntry + ":");
 
             Console.ReadKey();
         }
