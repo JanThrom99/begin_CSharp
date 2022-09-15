@@ -11,27 +11,13 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            //asking the user how old he is
-            Console.WriteLine("wie alt bist du?");
-            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Gib mit ein Wort/satz");
+            string entry = Console.ReadLine();
 
-            // check whether the user can enter the club or has to stay outside 
-            if (age > 18)
-            {
-                //check whether the user needs to show his ID or nor 
-                if (age >28)
-                {
-                    Console.WriteLine("kommste rein kannste rausschauen");
-                }
-                else
-                {
-                    Console.WriteLine("ausweis bidde");
-                }
-            }
-            else
-            {
-                Console.WriteLine("geh weg");
-            }
+            string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+
+            Console.WriteLine("der alte Text war: "+entry);
+            Console.WriteLine("der neue Text ist: " + replaced_entry);
 
             Console.ReadKey();
         }
