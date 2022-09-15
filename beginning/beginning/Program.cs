@@ -11,11 +11,14 @@ namespace beginning
     {
         static void Main(string[] args)
         {
+            //asking the user how old he is
             Console.WriteLine("wie alt bist du?");
             int age = Convert.ToInt32(Console.ReadLine());
 
+            // check whether the user can enter the club or has to stay outside 
             if (age > 18)
             {
+                //check whether the user needs to show his ID or nor 
                 if (age >28)
                 {
                     Console.WriteLine("kommste rein kannste rausschauen");
