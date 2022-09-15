@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,10 +11,19 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            double height = 1.76;
-            int multiplicator = 3; 
-            Console.WriteLine("du bist " + multiplicator*height + " groß");
-            Console.ReadLine();
+            Console.WriteLine("wie alt bist du?");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age < 18)
+            {
+                Console.WriteLine("du kommst hier net rein");
+            }
+            else
+            {
+                Console.WriteLine("kommste rein kannste rausschauen ");
+            }
+
+            Console.ReadKey();
         }
     }
 }
